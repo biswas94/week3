@@ -10,18 +10,22 @@ package week4;
  */
 public class Customer extends Person{
     private int customerId;
-    
+    private int areaId;
     /**
      * 
      * @param first first name
      * @param last last name
-     * @param id customer id number
+     * @param customerId customer customerId number
      */
-    public Customer(String first, String last, int id) {
+    public Customer(String first, String last, int customerId) {
         super(first, last);
-        this.customerId = id;
+        this.customerId = customerId;
     }
-
+    
+    public Customer(String first, String last, int areaId){
+        super(first, last);
+        this.areaId = areaId;
+    }
     /**
      * 
      * @return customer id number
