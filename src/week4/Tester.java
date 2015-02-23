@@ -18,8 +18,8 @@ public class Tester {
     public static void main(String[] args) {
         Date date = new Date();
         
-        Address addr1 = new Address("j.m.bass@rgu.ac.uk");
-        Address addr2 = new Address("m.zarb@rgu.ac.uk");
+        Address addr1 = new Address("Aberdeen", "j.m.bass@rgu.ac.uk");
+        Address addr2 = new Address("Aberdeen", "m.zarb@rgu.ac.uk");
         
         Customer customer = new Customer("Julian", "Bass", addr1, 200);
         
