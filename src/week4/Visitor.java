@@ -12,6 +12,7 @@ import java.util.Date;
  */
 public class Visitor extends Person{
     private Date visitDate;
+    private Address emailAddress;
     
     /**
      * 
@@ -19,9 +20,10 @@ public class Visitor extends Person{
      * @param last last name
      * @param d visit date 
      */
-    public Visitor(String first, String last, Date d) {
+    public Visitor(String first, String last, Address emailAddress, Date d) {
         super(first, last);
         this.visitDate = d;
+        this.emailAddress = emailAddress;
     }
 
     /**
@@ -38,6 +40,22 @@ public class Visitor extends Person{
      */
     public void setVisitDate(Date visitDate) {
         this.visitDate = visitDate;
+    }
+    
+    /**
+     * 
+     * @return email address
+     */
+    public Address getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * 
+     * @param emailAddress email address 
+     */
+    public void setEmailAddress(Address emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
 }

@@ -18,9 +18,12 @@ public class Tester {
     public static void main(String[] args) {
         Date date = new Date();
         
-        Customer customer = new Customer("Julian", "Bass", 200);
+        Address addr1 = new Address("j.m.bass@rgu.ac.uk");
+        Address addr2 = new Address("m.zarb@rgu.ac.uk");
         
-        Visitor visitor = new Visitor("Mark", "Zarb", date);
+        Customer customer = new Customer("Julian", "Bass", addr1, 200);
+        
+        Visitor visitor = new Visitor("Mark", "Zarb", addr2, date);
     }
     
 }

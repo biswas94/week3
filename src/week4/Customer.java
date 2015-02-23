@@ -10,16 +10,19 @@ package week4;
  */
 public class Customer extends Person{
     private int customerId;
+    private Address emailAddress;
     
     /**
      * 
      * @param first first name
      * @param last last name
      * @param id customer id number
+     * @param emailAddress email address
      */
-    public Customer(String first, String last, int id) {
+    public Customer(String first, String last, Address emailAddress, int id) {
         super(first, last);
         this.customerId = id;
+        this.emailAddress = emailAddress;
     }
 
     /**
@@ -36,6 +39,22 @@ public class Customer extends Person{
      */
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
+    }
+
+    /**
+     * 
+     * @return email address
+     */
+    public Address getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * 
+     * @param emailAddress email address 
+     */
+    public void setEmailAddress(Address emailAddress) {
+        this.emailAddress = emailAddress;
     }
     
 }
